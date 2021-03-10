@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+    <display-name>JMS Queue Sample Web Application</display-name>
+    <description>
+        This is a sample web application which sends and receives queue message using RabbitMQ message broker.
+    </description>
+    <servlet>
+        <servlet-name>MessagesServlet</servlet-name>
+        <servlet-class>com.demo.MessagesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessagesServlet</servlet-name>
+        <url-pattern>/messages</url-pattern>
+    </servlet-mapping>
+
+</web-app>
