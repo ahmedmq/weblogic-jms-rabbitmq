@@ -59,7 +59,7 @@ The `.bindings` file must be stored in a local file path and should also be upda
 This creates a .war which needs to be deployed on Weblogic 12.1.3
 
 The below screenshot displays the JSP page of the application after deploying onto WebLogic:
-[JSP Frontend](/images/JSP_Frontend.png)
+![JSP Frontend](/images/JSP_Frontend.png)
 
 Type any text in the given text area and click on **Send**. This will send the message to the RabbitMQ queue (`ForeignQueue`) and the listener configured will read back the same message from the queue and display it on the screen.
 
